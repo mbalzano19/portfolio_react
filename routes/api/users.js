@@ -6,7 +6,7 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn')
 // POST route to handle a controller function(currently tbb)
 router.post('/', usersCtrl.create)
 // POST route to handle log in controller
-router.post('/login', usersCtrl.login)
+// router.post('/login', usersCtrl.login)
 // GET /api/users/check-token
 router.get('/check-token', ensureLoggedIn, usersCtrl.checkToken)
 
