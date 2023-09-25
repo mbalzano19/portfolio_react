@@ -13,6 +13,8 @@ export default function NavBar({ user, setUser }) {
         <nav>
             <Link to='/home'>Home</Link>
             &nbsp; | &nbsp;
+            <Link to='/bio'>Bio</Link>
+            &nbsp; | &nbsp;
             <Link to='/projects'>Projects</Link>
             &nbsp; | &nbsp;
             <Link to='/contact'>Contact</Link>

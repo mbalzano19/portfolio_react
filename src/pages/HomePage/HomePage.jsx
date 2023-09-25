@@ -8,12 +8,15 @@ export default function HomePage() {
   
     return (
       <>
+      <div className='biocontainer'>
+        <div className='left'>
       <h1>Matthew Balzano</h1>
-      <h2 className='text-sm'>Software Engineer</h2>
+      <h2 className='text-sm mt-20'>Software Engineer</h2>
       <div className='picture'>
       <img src="https://i.imgur.com/A6LO9td.jpg" alt="" id='headshot'/>
       </div>
-      <div className="md:container md:mx-auto z-10 w-full max-w-5xl items-center justify-between flex-col font-mono text-sm lg:flex" id='bio'>
+      </div>
+      <div className="md:container md:mx-auto z-10 w-full max-w-5xl items-center justify-between flex-col font-mono text-sm lg:flex mt-20" id='bio'>
         <p>In early 2023, I decided to chase a passion of mine: software engineering. Wanting to push myself to better my skills, I enrolled in General Assembly's Software Engineering Immersive Bootcamp in April of 2023. During this experience, I built full-stack applications and deepended my knowledge of JavaScript and Python. Additionally, I learned some new skills, such as React.
         <br />
         <br />
@@ -27,7 +30,13 @@ export default function HomePage() {
 
         </p>
       </div>
+      </div>
       </>
     )
   }
+  
+
+
+  
+
   
