@@ -6,6 +6,7 @@ export default function HomePage(props) {
   const navigate = useNavigate();
 
   useEffect(() => {
+    
     const isUserSignedIn = props.user !== null;
 
     if (isUserSignedIn) {
@@ -14,7 +15,9 @@ export default function HomePage(props) {
     }
   }, [props.user, navigate]);
 
-  const handleSignIn = () => {
+  const handleSignIn = (evt) => {
+    evt.preventDefault()
+    console.log('evt default', evt)
     // You can set a default username or customize this based on your needs
     const defaultUsername = "Guest"; // Change this to the desired default username
     props.setUser(defaultUsername);
