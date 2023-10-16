@@ -1,3 +1,3 @@
-# MERN-Stack Infrastructure
+# Portfolio Site
 
-Clone this repo to provide the started code for a future MERN-Stack project
+Built with React and Three.js
