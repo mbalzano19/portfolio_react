@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function ProjectCard() {
+
+  useEffect(() => {
+    // Add the 'fade-in' class to each element with a delay
+    const elements = document.querySelectorAll(".fade-in-item");
+    elements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("fade-in");
+      }, index * 200); // Adjust the delay for each item as needed
+    });
+  }, []);
+
   const projects = [
     {
       title: "BalzanoBeats",
@@ -25,12 +36,12 @@ export default function ProjectCard() {
 
   return (
     <>
-    <h1 className="mt-12 text-4xl font-mono">Projects</h1>
+    <h1 className="mt-12 text-4xl font-mono fade-in-item">Projects</h1>
     <div className="flex flex-wrap justify-center mt-16">
       {projects.map((project, index) => (
         <div
           key={index}
-          className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4 transition transform hover:scale-105"
+          className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4 transition transform hover:scale-105 fade-in-item"
         >
           <a href={project.link}>
             <img

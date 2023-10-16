@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import './BioPage.css'
 
 export default function BioPage() {
   const bioData = {
@@ -33,16 +35,26 @@ export default function BioPage() {
     </React.Fragment>
   ));
 
+  useEffect(() => {
+    // Add the 'fade-in' class to each element with a delay
+    const elements = document.querySelectorAll(".fade-in-item");
+    elements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("fade-in");
+      }, index * 200); // Adjust the delay for each item as needed
+    });
+  }, []);
+
   return (
     <div className="flex mt-12 mx-auto max-w-6xl">
-      <div className="w-1/3 pr-8">
+      <div className="w-1/3 pr-8 fade-in-item">
         <img
           src={bioData.imageUrl}
           alt={bioData.name}
           className="rounded-full h-auto w-full"
         />
       </div>
-      <div className="w-2/3">
+      <div className="w-2/3 fade-in-item">
         <h1 className="text-4xl font-mono mb-4">{bioData.name}</h1>
         {bioElements}
       </div>

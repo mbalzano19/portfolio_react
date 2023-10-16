@@ -1,0 +1,12 @@
+nav a {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  nav a:hover {
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+  }

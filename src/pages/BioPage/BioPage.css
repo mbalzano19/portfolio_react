@@ -1,0 +1,8 @@
+.fade-in-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Transition effect over 1 second */
+  }
+  
+  .fade-in-item.fade-in {
+    opacity: 1; /* Fully visible */
+  }
