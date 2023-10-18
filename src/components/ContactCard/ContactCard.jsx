@@ -34,6 +34,11 @@ import React, { useEffect } from "react";
         imageUrl: "https://i.imgur.com/aKaJyKs.png",
         link: "https://www.instagram.com/balzano_skrt/",
       },
+      {
+        title: "Spotify",
+        imageUrl: "https://i.imgur.com/kzT0s4v.png",
+        link: "https://open.spotify.com/artist/2TsZ2YVytQlEUcoUCdLsgJ?si=eR2OW-gNSOW60PMPCKZXNQ",
+      },
     ];
   
     return (
