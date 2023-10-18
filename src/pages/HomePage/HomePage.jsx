@@ -117,7 +117,7 @@ export default function HomePage(props) {
   return (
     <div className="full-screen-container">
       <div className="login-container">
-        <h3 className="login-title">Matthew Balzano</h3>
+        <h3 className="login-title">Welcome</h3>
         <button onClick={handleSignIn} className="login-button hover:scale-105">
           Enter
         </button>
