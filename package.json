@@ -1,6 +1,6 @@
 {
-  "homepage": "http://mbalzano19.github.io/portfolio_react",
-  "name": "my-portfolio",
+  "homepage": "https://mbalzano19.github.io/portfolio_react",
+  "name": "mern-infrastructure",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
